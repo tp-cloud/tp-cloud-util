@@ -34,6 +34,10 @@ public class ApiResult<T> implements Serializable {
         return data;
     }
 
+    private ApiResult() {
+
+    }
+
     /**
      * 默认操作成功
      */
@@ -69,7 +73,7 @@ public class ApiResult<T> implements Serializable {
      * @param <T>    响应数据的泛型
      * @return <code>ApiResult</code>
      */
-    public static <T> ApiResult<T> result(ApiResultStatus status, T data) {
+    private static <T> ApiResult<T> result(ApiResultStatus status, T data) {
         return new ApiResultBuilder<T>()
                 .code(status.getValue())
                 .message(status.getReasonPhrase())

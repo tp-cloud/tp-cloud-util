@@ -1,7 +1,6 @@
 package com.ithinksky.util;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.ithinksky.util.helper.AppTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -12,9 +11,9 @@ import java.math.BigDecimal;
  *
  * @author tengpeng.gao
  */
-class BigDecimalUtilsTest {
+class BigDecimalUtilsTest extends AppTest {
 
-    private static Logger log = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
+//    private static Logger log = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
     @Test
     void add() {
