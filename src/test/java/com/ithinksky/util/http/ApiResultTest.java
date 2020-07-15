@@ -52,6 +52,14 @@ class ApiResultTest extends AppTest {
     }
 
     @Test
+    void errorData() {
+        ApiResult error = ApiResult.error("业务异常");
+        String string = JsonUtil.toJsonString(error);
+        log.info("ApiResult.errorData === {}", string);
+        Assertions.assertTrue("{\"code\":100500,\"message\":\"服务器内部错误\",\"data\":\"业务异常\"}".equals(string));
+    }
+
+    @Test
     void build() {
         ApiResult error = new ApiResult.ApiResultBuilder<Map<String, Object>>().code(100404).message("什么鬼啊，异常了").build();
         String string = JsonUtil.toJsonString(error);

@@ -66,6 +66,17 @@ public class ApiResult<T> implements Serializable {
     }
 
     /**
+     * 操作失败
+     *
+     * @param data 响应数据
+     * @param <T>  响应数据的泛型
+     * @return <code>ApiResult</code>
+     */
+    public static <T> ApiResult<T> error(T data) {
+        return ApiResult.result(ApiResultStatus.ERROR, data);
+    }
+
+    /**
      * 自定义操作结果
      *
      * @param status <code>ApiResultStatus</code>接口响应状态
