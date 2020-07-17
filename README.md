@@ -25,4 +25,4 @@ Common Utils
 - 中文版 [提问的智慧](https://github.com/ithinksky/How-To-Ask-Questions-The-Smart-Way)
 - 英文版 [How-To-Ask-Questions-The-Smart-Way](http://www.catb.org/~esr/faqs/smart-questions.html)
 
-> 发生邮件至 tengpeng.gao@gmail.com 
+> 议题请发生邮件至 tengpeng.gao [@] gmail.com 
