@@ -10,7 +10,7 @@ public class CurrentUtil {
     /**
      * 获取当前执行方法的简要名称
      *
-     * @return
+     * @return 当前执行方法的简要名称
      */
     public static String getMethodSimpleName() {
         StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[2];
@@ -21,7 +21,7 @@ public class CurrentUtil {
     /**
      * 获取当前执行方法的全名称
      *
-     * @return
+     * @return 当前执行方法的全名称
      */
     public static String getClassMethodName() {
         StringBuilder result = new StringBuilder();
