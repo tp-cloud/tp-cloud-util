@@ -8,6 +8,6 @@ import org.apache.logging.log4j.Logger;
  */
 public class AppTest {
 
-    protected Logger log = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
+    protected Logger log = LogManager.getLogger(this.getClass());
 
 }
